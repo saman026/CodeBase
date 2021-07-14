@@ -1,0 +1,107 @@
+{"message":"\tServer is running on 5000","level":"info","timestamp":"Jul-14-2021 15:49:10"}
+{"message":"\tIncoming request GET","level":"info","timestamp":"Jul-14-2021 15:49:17"}
+{"message":"\t/response {\n  _id: 60edf18948efab411c63e542,\n  name: 'sam',\n  email: 'test00@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee502248efab411c63e546,\n  name: 'sam',\n  email: 'test@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee75148bded8529897ab43,\n  name: 'sam',\n  email: 'test92@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee76dd8bded8529897ab47,\n  name: 'sam',\n  email: 'test002@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee970049a47c5a3c9c8633,\n  name: 'sam',\n  email: 'test02@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60eeb2ba9f78602c9c23534e,\n  name: 'sam',\n  email: 'te2@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60eeb4f644b02d5a2c570a95,\n  name: 'sam',\n  email: 'te200@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n}","level":"info","timestamp":"Jul-14-2021 15:49:17"}
+{"message":"\tIncoming request GET","level":"info","timestamp":"Jul-14-2021 15:49:43"}
+{"message":"\t/response {\n  _id: 60edf18948efab411c63e542,\n  name: 'sam',\n  email: 'test00@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee502248efab411c63e546,\n  name: 'sam',\n  email: 'test@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee75148bded8529897ab43,\n  name: 'sam',\n  email: 'test92@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee76dd8bded8529897ab47,\n  name: 'sam',\n  email: 'test002@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60ee970049a47c5a3c9c8633,\n  name: 'sam',\n  email: 'test02@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60eeb2ba9f78602c9c23534e,\n  name: 'sam',\n  email: 'te2@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n},{\n  _id: 60eeb4f644b02d5a2c570a95,\n  name: 'sam',\n  email: 'te200@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n}","level":"info","timestamp":"Jul-14-2021 15:49:43"}
+{"message":"\tIncoming request GET","level":"info","timestamp":"Jul-14-2021 15:49:51"}
+{"statusCode":404,"status":"fail","message":"\tCan't find /api/employee/08987976 on this server!","level":"error","timestamp":"Jul-14-2021 15:49:51"}
+{"message":"\tIncoming request POST","level":"info","timestamp":"Jul-14-2021 15:50:31"}
+{"statusCode":404,"status":"fail","message":"\tCan't find /api/employee/08987976 on this server!","level":"error","timestamp":"Jul-14-2021 15:50:31"}
+{"message":"\tIncoming request POST","level":"info","timestamp":"Jul-14-2021 15:50:44"}
+{"message":"\tFile name: employeeService.js Data passed sam te200@gmail.com 1234567890 12agfg","level":"info","timestamp":"Jul-14-2021 15:50:44"}
+{"statusCode":400,"status":"fail","message":"\tEmail already exists!","level":"error","timestamp":"Jul-14-2021 15:50:44"}
+{"message":"\tIncoming request POST","level":"info","timestamp":"Jul-14-2021 15:51:08"}
+{"message":"\tName is required!","level":"error","timestamp":"Jul-14-2021 15:51:08"}
+{"statusCode":400,"status":"fail","message":"\t[object Object]","level":"error","timestamp":"Jul-14-2021 15:51:08"}
+{"message":"\tIncoming request POST","level":"info","timestamp":"Jul-14-2021 15:51:44"}
+{"message":"\tEnter valid email!","level":"error","timestamp":"Jul-14-2021 15:51:44"}
+{"statusCode":400,"status":"fail","message":"\t[object Object]","level":"error","timestamp":"Jul-14-2021 15:51:44"}
+{"message":"\tIncoming request POST","level":"info","timestamp":"Jul-14-2021 15:52:13"}
+{"message":"\tFile name: employeeService.js Data passed sam te2000@gmail.com 1234567890 12agfg","level":"info","timestamp":"Jul-14-2021 15:52:13"}
+{"message":"\tData added to the database {\n  _id: 60eebad50c75e85a14a32c47,\n  name: 'sam',\n  email: 'te2000@gmail.com',\n  contact: 1234567890,\n  address: '12agfg',\n  __v: 0\n}","level":"info","timestamp":"Jul-14-2021 15:52:14"}
+info:undefined: Jul-14-2021 15:52:52: 	Server is running on 5000
+info:undefined: Jul-14-2021 15:52:57: 	Incoming request POST
+info:undefined: Jul-14-2021 15:52:57: 	File name: employeeService.js Data passed sam te2000@gmail.com 1234567890 12agfg
+error:undefined: Jul-14-2021 15:52:58: 	Email already exists!
+info: Jul-14-2021 15:53:21: 	Server is running on 5000
+info: Jul-14-2021 15:53:30: 	Incoming request POST
+info: Jul-14-2021 15:53:30: 	File name: employeeService.js Data passed sam te2000@gmail.com 1234567890 12agfg
+error: Jul-14-2021 15:53:30: 	Email already exists!
+info: Jul-14-2021 15:54:14: 	Incoming request POST
+info: Jul-14-2021 15:54:14: 	File name: employeeService.js Data passed sam te20000@gmail.com 1234567890 12agfg
+info: Jul-14-2021 15:54:15: 	Data added to the database {
+  _id: 60eebb4ecba294595036bfdd,
+  name: 'sam',
+  email: 'te20000@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+}
+info: Jul-14-2021 15:54:35: 	Incoming request GET
+info: Jul-14-2021 15:54:36: 	/response {
+  _id: 60edf18948efab411c63e542,
+  name: 'sam',
+  email: 'test00@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60ee502248efab411c63e546,
+  name: 'sam',
+  email: 'test@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60ee75148bded8529897ab43,
+  name: 'sam',
+  email: 'test92@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60ee76dd8bded8529897ab47,
+  name: 'sam',
+  email: 'test002@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60ee970049a47c5a3c9c8633,
+  name: 'sam',
+  email: 'test02@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60eeb2ba9f78602c9c23534e,
+  name: 'sam',
+  email: 'te2@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60eeb4f644b02d5a2c570a95,
+  name: 'sam',
+  email: 'te200@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60eebad50c75e85a14a32c47,
+  name: 'sam',
+  email: 'te2000@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+},{
+  _id: 60eebb4ecba294595036bfdd,
+  name: 'sam',
+  email: 'te20000@gmail.com',
+  contact: 1234567890,
+  address: '12agfg',
+  __v: 0
+}
+info: Jul-14-2021 15:55:38: 	Incoming request DELETE
+error: Jul-14-2021 15:55:38: 	Can't find /api/employee on this server!
+info: Jul-14-2021 16:05:12: 	Server is running on 5000
