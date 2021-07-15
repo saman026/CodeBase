@@ -1,7 +1,6 @@
-import { AppError } from "../utils/appError.js";
-import { getEmail, saveEmployee, getEmployee, getEmployeeById, removeEmployee, editEmployee } from "../repositories/employeeDAO.js";
+import AppError from "../utils/appError.js";
+import { getEmail, saveEmployee, getEmployeeById, removeEmployee, editEmployee } from "../repositories/employeeDAO.js";
 import logger from "../utils/logger.js";
-import bcrypt from "bcrypt";
 import { generateToken, checkPassword } from "../utils/functions.js";
 
 const register = async (req, res, next) => {
@@ -29,18 +28,15 @@ const register = async (req, res, next) => {
 const login = async (req, res, next) => {
     try {
         const { email, password } = req.body;
-
         const email_fetched = await getEmail(email);
         
         if (!email_fetched) {
-            next(new AppError("No such email exists!", 404));
-            return;
+            return next(new AppError("No such email exists!", 404));
         }
 
         const isMatch = await checkPassword(password, email_fetched.password);
         if (!isMatch) {
-            next(new AppError("Invalid credentials", 400));
-            return;
+            return next(new AppError("Invalid credentials", 400));
         }
         const payload = {
             id: email_fetched._id,
@@ -57,9 +53,9 @@ const login = async (req, res, next) => {
     }
 };
 
-const fetch = async (req, res, next) => {
+const fetch = async (id,next) => {
     try {
-        return await getEmployee();
+        return await getEmployeeById(id);
         // logger.info(`/response ${employee}`);
     } catch (error) {
         return next(new AppError("Error in fetching!", 400))

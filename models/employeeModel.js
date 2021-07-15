@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import validator from "validator";
-import bcrypt from "bcrypt";
+import { hashPassword } from "../utils/functions.js";
 
 const employeeSchema = new mongoose.Schema({
     name: {
@@ -24,7 +24,7 @@ const employeeSchema = new mongoose.Schema({
 });
 
 employeeSchema.pre('save', async function(next){
-    this.password = await bcrypt.hash(this.password, 12);
+    this.password = await hashPassword(this.password);
     next();
 });
 

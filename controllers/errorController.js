@@ -1,6 +1,6 @@
-import { AppError } from "../utils/appError.js";
+import AppError from "../utils/appError.js";
 import logger from "../utils/logger.js";
-
+import winston from "../utils/winston.js";
 const handleCastErrorDB = err => {
     const message = `Invalid ${err.path}: ${err.val}.`;
     return new AppError(message, 400);
@@ -36,9 +36,11 @@ const globalError = (err,req,res,next)=>{
         if(error.code === 11000) error = handleDuplicateFieldDB(error);
         if(error.name === 'ValidationError') error = handleValidationErrorDB(error);
         
-        logger.error(error);
+    logger.error(error);
+    winston.error(`${err.status || 500} - ${err.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`);
+    // winston.error(error);
         sendErrorDev(error,res);
     
 }
 
-export { globalError };
+export default globalError;

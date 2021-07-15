@@ -1,0 +1,22 @@
+{"message":"\n\u001b[96mRequest: \u001b[93mPOST \u001b[97m/api/employee/login \u001b[90mat \u001b[37mThu Jul 15 2021 14:31:35 GMT+0530, \u001b[90mIP: \u001b[37m::1\u001b[0m, \u001b[90mUser Agent: PostmanRuntime/7.28.1\u001b[0m\n","level":"info"}
+{"message":"\u001b[95mRequest Body:\u001b[0m\n\u001b[97m{\u001b[0m\n\u001b[97m\t\"name\": \"saman\",\u001b[0m\n\u001b[97m\t\"email\": \"587665@gmai.com\",\u001b[0m\n\u001b[97m\t\"password\": \"123456789\",\u001b[0m\n\u001b[97m\t\"address\": \"12agfg\"\u001b[0m\n\u001b[97m}\u001b[0m\n","level":"info"}
+{"message":"\u001b[96mResponse: \u001b[32m200 \u001b[37m320.394 ms \n","level":"info"}
+{"message":"fail - No such email exists! - /api/employee/login - POST - ::1","level":"error"}
+{"message":"\nRequest: POST /api/employee/login at Thu Jul 15 2021 14:33:13 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1\n","level":"info"}
+{"message":"Request Body:\n{\n\t\"name\": \"saman\",\n\t\"email\": \"587665@gmai.com\",\n\t\"password\": \"123456789\",\n\t\"address\": \"12agfg\"\n}\n","level":"info"}
+{"message":"Response: 200 348.265 ms \n","level":"info"}
+{"message":"fail - No such email exists! - /api/employee/login - POST - ::1","level":"error"}
+{"message":"\nRequest: POST /api/employee/login at Thu Jul 15 2021 14:37:18 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1\n","level":"info"}
+{"message":"Request Body:\n{\n\t\"name\": \"saman\",\n\t\"email\": \"5@gmai.com\",\n\t\"password\": \"12345789\",\n\t\"address\": \"12agfg\"\n}\n","level":"info"}
+{"message":"Response Body:\n{\n\t\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWZjZTYwNzI2MDA5MWMyMDNmMTE3YSIsImlhdCI6MTYyNjM0MDAzOCwiZXhwIjoxNjI2NDI2NDM4fQ.eQHGZtE-HL8rkE7cIjNefykIocx7m-3CYpx6q0_mXSA\"\n}\n","level":"info"}
+{"message":"Response: 200 633.098 ms \n","level":"info"}
+{"message":"fail - Invalid credentials - /api/employee/login - POST - ::1","level":"error"}
+{"message":"\nRequest: POST /api/employee/login at Thu Jul 15 2021 14:37:24 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1\n","level":"info"}
+{"message":"Request Body:\n{\n\t\"name\": \"saman\",\n\t\"email\": \"5@gmai.com\",\n\t\"password\": \"1234789\",\n\t\"address\": \"12agfg\"\n}\n","level":"info"}
+{"message":"Response Body:\n{\n\t\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWZjZTYwNzI2MDA5MWMyMDNmMTE3YSIsImlhdCI6MTYyNjM0MDA0NCwiZXhwIjoxNjI2NDI2NDQ0fQ.oxnktGx7jFRXoqNxQTcinXv_mxBPmoxTFFnGinjRAbc\"\n}\n","level":"info"}
+{"message":"Response: 200 608.269 ms \n","level":"info"}
+{"message":"fail - Invalid credentials - /api/employee/login - POST - ::1","level":"error"}
+{"message":"\nRequest: POST /api/employee/login at Thu Jul 15 2021 14:37:50 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1\n","level":"info"}
+{"message":"Request Body:\n{\n\t\"name\": \"saman\",\n\t\"email\": \"5@gmai.com\",\n\t\"password\": \"1234789\",\n\t\"address\": \"12agfg\"\n}\n","level":"info"}
+{"message":"Response: 200 613.436 ms \n","level":"info"}
+{"message":"fail - Invalid credentials - /api/employee/login - POST - ::1","level":"error"}

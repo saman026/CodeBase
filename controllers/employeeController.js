@@ -1,6 +1,7 @@
 import { validationResult } from "express-validator";
 import { register, login, fetch, edit, remove } from "../services/employeeService.js";
-import { AppError } from "../utils/appError.js";
+import AppError from "../utils/appError.js";
+import logger from "../utils/logger.js";
 
 
 const addEmployee = async (req, res, next) => {
@@ -26,9 +27,9 @@ const loginEmployee = async (req, res, next) => {
     }
 };
 
-const getEmployee = async (req, res) => {
+const getEmployee = async (req, res, next) => {
     try {
-        const employee = await fetch();
+        const employee = await fetch(req.user.id,next);
         res.json({ data: employee });
     } catch (error) {
         next(new AppError("Error in fetching!", 400));
@@ -40,6 +41,7 @@ const updateEmployee = async (req, res, next) => {
     try {
         const { name, address } = req.body;
         const employee = await edit(req.user.id, name, address, next);
+        logger.info("Updated successfully!!");
         res.json({ data: employee });
     } catch (error) {
         next(new AppError("Error in updating!", 400));

@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { promisify } from "util";
 import { getEmployeeById } from "../repositories/employeeDAO.js";
-import { AppError } from "../utils/appError.js";
+import AppError from "../utils/appError.js";
 
 
 
@@ -29,4 +29,4 @@ const protect = async (req, res, next ) =>{
     }
 }
 
-export { protect };
+export default protect;

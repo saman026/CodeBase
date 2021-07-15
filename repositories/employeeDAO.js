@@ -1,5 +1,5 @@
-import  Employee  from "../models/employeeModel.js";
-import { AppError } from "../utils/appError.js";
+import Employee from "../models/employeeModel.js";
+import AppError from "../utils/appError.js";
 
 const getEmail = async (email) => {
     try {

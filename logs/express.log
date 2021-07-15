@@ -1,0 +1,144 @@
+
+Request: POST /api/employee at Thu Jul 15 2021 12:54:34 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"email": "597@gmai.com",
+	"password": "123456789",
+	"address": "12agfg"
+}
+Response Body:
+{
+	"error": {
+		"statusCode": 400,
+		"status": "fail",
+		"message": {
+			"errors": [
+				{
+					"msg": "Name is required!",
+					"param": "name",
+					"location": "body"
+				}
+			]
+		},
+		"level": "error"
+	}
+}
+Response: 400 21.853 ms 
+
+Request: GET /api/employee at Thu Jul 15 2021 12:55:33 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"email": "597@gmai.com",
+	"password": "123456789",
+	"address": "12agfg"
+}
+Response Body:
+{
+	"error": {
+		"statusCode": 404,
+		"status": "fail",
+		"message": "You are not logged in!",
+		"level": "error"
+	}
+}
+Response: 404 3.972 ms 
+
+Request: POST /api/employee/login at Thu Jul 15 2021 13:03:42 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"name": "saman",
+	"email": "55@gmai.com",
+	"password": "123456789",
+	"address": "12agfg"
+}
+Response Body:
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWZjOGQwNmJmZGFiMmFmYzk2ZTEwNSIsImlhdCI6MTYyNjMzNDQyMiwiZXhwIjoxNjI2NDIwODIyfQ.G4bIlg0ekhWBwwi6WxnifOto8lknf4YI9f9V0Ab-on4"
+}
+Response: 200 648.004 ms 
+
+Request: POST /api/employee/login at Thu Jul 15 2021 13:28:37 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"name": "saman",
+	"email": "55@gmai.com",
+	"password": "12345678",
+	"address": "12agfg"
+}
+Response: 200 598.065 ms 
+
+Request: POST /api/employee at Thu Jul 15 2021 13:30:12 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"email": "597@gmai.com",
+	"password": "123456789",
+	"address": "12agfg"
+}
+Response Body:
+{
+	"error": {
+		"statusCode": 400,
+		"status": "fail",
+		"message": {
+			"errors": [
+				{
+					"msg": "Name is required!",
+					"param": "name",
+					"location": "body"
+				}
+			]
+		},
+		"level": "error"
+	}
+}
+Response: 400 2.875 ms 
+
+Request: POST /api/employee at Thu Jul 15 2021 13:30:16 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"name": "samanA",
+	"email": "597@gmai.com",
+	"password": "123456789",
+	"address": "12agfg"
+}
+Response Body:
+{
+	"error": {
+		"statusCode": 400,
+		"status": "fail",
+		"message": "Email already exists!",
+		"level": "error"
+	}
+}
+Response: 400 380.677 ms 
+
+Request: POST /api/employee at Thu Jul 15 2021 13:30:28 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"name": "samanA",
+	"email": "59@gmai.com",
+	"password": "123456789",
+	"address": "12agfg"
+}
+Response Body:
+{
+	"data": {
+		"_id": "60efeb1cdff7115f74e56632",
+		"name": "samanA",
+		"email": "59@gmai.com",
+		"password": "$2b$12$wrixG543W873W.lcYGs1x.Wnu5OrN4cXVkkdUwFuYj4IhtPbFFPIS",
+		"address": "12agfg",
+		"__v": 0
+	}
+}
+Response: 200 937.287 ms 
+
+Request: POST /api/employee/login at Thu Jul 15 2021 13:31:59 GMT+0530, IP: ::1, User Agent: PostmanRuntime/7.28.1
+Request Body:
+{
+	"name": "saman",
+	"email": "55@gmai.com",
+	"password": "12345689",
+	"address": "12agfg"
+}
+Response: 200 603.942 ms 

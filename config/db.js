@@ -4,7 +4,7 @@ dotenv.config({ path: './config.env' });
 
 const db = process.env.DATABASE.replace('<password>', process.env.DATABASE_PASSWORD);
 
-export const connectDB = async () => {
+const connectDB = async () => {
     try {
         await mongoose.connect(db, {
             useUnifiedTopology: true,
@@ -19,3 +19,4 @@ export const connectDB = async () => {
     }
 };
 
+export default connectDB;

@@ -7,8 +7,12 @@ const generateToken = id => {
     });
 };
 
+const hashPassword = async (password) => {
+    return await bcrypt.hash(password, 12);
+}
+
 const checkPassword = (password, encrypted_password) => {
     return bcrypt.compare(password, encrypted_password);
 }
 
-export { generateToken, checkPassword };
+export { generateToken, checkPassword, hashPassword };
